@@ -1,0 +1,9 @@
+dica1 = "O primeiro passo é: edadilibom ret"
+dica2 = "O segundo passo é: DaNçAR bEM"
+decifra1 = dica1.split(":")[-1]
+decifra_invert = decifra1[::-1]
+print(decifra_invert)
+
+decifra2 = dica2.split(":")[-1]
+decifra_lower = decifra2.lower()
+print(decifra_lower)
