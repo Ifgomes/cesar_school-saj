@@ -1,0 +1,31 @@
+print("Feira da Agricultura Familiar")
+print("Seja bem vindo(a)! Você será nosso(a) jurado(a) especial, irá avaliar as comidas e dará as notas de cada barraca!")
+
+num_barracas = int(input("Quantas barracas você deseja avaliar? "))
+
+melhor_fruta = ""
+notadafruta = -1
+
+melhor_vegetal = ""
+notadovegetal = -1
+
+for i in range(1, num_barracas+1):
+    print(f"Barraca {i}")
+
+fruta = input("Digite o nome da fruta avaliada: ")
+nota_f = float(input(f"Qual a nota dada de 0 a 10 para a fruta {fruta}"))
+
+if nota_f > notadafruta:
+    melhor_fruta = fruta
+    notadafruta = nota_f
+
+vegetal = input("Digite o nome do vegetal avaliado: ")
+nota_v = float(input(f"Qual a nota do vegetal escolhido de 0 a 10 {vegetal}? "))
+
+if nota_v > notadovegetal:
+    melhor_vegetal = vegetal
+    notadovegetal = nota_v
+
+print("Resultado da Feira de Agricultura Familiar")
+print(f"A melhor fruta: {melhor_fruta} com a nota de: {notadafruta}")
+print(f"O melhor vegetal: {melhor_vegetal} com a nota de: {notadovegetal}")
